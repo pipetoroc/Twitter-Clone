@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import "./Card.css";
 import getAvatar from "../../services/getAvatar";
+import ButtonFollow from "../ButtonFollow/ButtonFollow";
 
 function Card() {
 
@@ -23,7 +24,7 @@ function Card() {
         <span className="article__span--div ">{user.email}</span>
         <p className="article__p ">{user.phone}</p>
       </div>
-      <button className="article__button">Following</button>
+      <ButtonFollow/>
     </div>
   );
 }
